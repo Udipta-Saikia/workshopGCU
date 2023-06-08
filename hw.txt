@@ -1,0 +1,7 @@
+create a web page with headings, paragraphs and an image.
+build a navigation menu using html list and hyperlinks. 
+
+
+whether the length of password is less than 6
+if greater than 6 it will show an alert 
+use function length

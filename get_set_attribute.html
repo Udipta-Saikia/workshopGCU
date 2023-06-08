@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifying Attributes Example</title>
+</head>
+<body>
+  <h1 id="title">Original Title</h1>
+  <img id="image" src="image.jpg" alt="Original Image">
+
+  <script>
+    var titleElement = document.getElementById('title');
+    titleElement.setAttribute('class', 'highlight');
+    titleElement.setAttribute('data-info', 'Custom data attribute');
+
+    var imageElement = document.getElementById('image');
+    imageElement.setAttribute('src', 'new_image.jpg');
+    imageElement.setAttribute('alt', 'New Image');
+
+    var titleClass = titleElement.getAttribute('class');
+    var imageDataInfo = imageElement.getAttribute('data-info');
+
+    console.log('Modified Title Class:', titleClass);
+    console.log('Image Data Info:', imageDataInfo);
+  </script>
+</body>
+</html>

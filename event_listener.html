@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling Example</title>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+  <input type="text" id="myInput">
+
+  <script>
+    // Selecting elements
+    var button = document.getElementById('myButton');
+    var input = document.getElementById('myInput');
+
+    // Registering event listeners
+    button.addEventListener('click', handleClick);
+    button.addEventListener('mouseover', handleMouseOver);
+    input.addEventListener('input', handleInput);
+
+    // Defining event handler functions
+    function handleClick(event) {
+      console.log('Button clicked!');
+      console.log('Event:', event);
+    }
+
+    function handleMouseOver(event) {
+      console.log('Button mouseover!');
+      console.log('Event:', event);
+    }
+
+    function handleInput(event) {
+      console.log('Input changed!');
+      console.log('Event:', event);
+      console.log('Input value:', event.target.value);
+    }
+  </script>
+</body>
+</html>

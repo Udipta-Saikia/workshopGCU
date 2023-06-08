@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Handling Events with DOM</title>
+  <style>
+    .highlight {
+      color: green;
+    }
+    .background{
+        background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+
+  <script>
+    var buttonElement = document.getElementById('myButton');
+    var body = document.querySelector('body');
+    buttonElement.addEventListener('click', handleClick);
+    function handleClick(event) {
+      buttonElement.classList.add('highlight');
+      buttonElement.textContent = 'Clicked!';
+      body.classList.add('background');
+      console.log('Button Clicked');
+    }
+  </script>
+</body>
+</html>

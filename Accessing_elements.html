@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accessing Elements Example</title>
+</head>
+<body>
+  <h1 id="title">DOM Access Example</h1>
+  <p class="content">This is paragraph 1.</p>
+  <p class="content">This is paragraph 2.</p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <script>
+    var titleElement = document.getElementById('title');
+    console.log('Title Element:', titleElement);
+
+    var contentElements = document.getElementsByClassName('content');
+    console.log('Content Elements:', contentElements);
+
+    var firstParagraph = document.querySelector('p');
+    console.log('First Paragraph:', firstParagraph);
+
+    var listItem = document.querySelector('ul li');
+    console.log('List Item:', listItem);
+  </script>
+</body>
+</html>
